@@ -1,0 +1,64 @@
+.more-about {
+  background-color: #eee;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.more-about-heading {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.more-about-articles {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+.more-about-article {
+  flex: 0 0 167px;
+  height: 215px;
+  background-color: #fff;
+  display: block;
+  text-decoration: none;
+  color: #090909;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  margin-left: 11px;
+}
+
+.more-about-article:first-child {
+  margin-left: 0;
+}
+
+.more-about-article-thumbnail {
+  width: 100%;
+  height: auto;
+}
+
+.more-about-article-title {
+  margin-top: 13px;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  line-height: 0.9;
+  margin-bottom: 0;
+}
+
+.more-about-article-issue {
+  position: absolute;
+  font-size: 8px;
+  right: 8px;
+  bottom: 2px;
+}
+
+.scroller-mask {
+  height: 215px;
+  overflow: hidden;
+}
+
+.scroller-horizontal {
+  overflow-x: scroll;
+  height: 315px;
+}
