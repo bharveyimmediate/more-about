@@ -2,6 +2,7 @@
   background-color: #eee;
   overflow: hidden;
   min-height: 300px;
+  padding: 0 22px;
 }
 
 .more-about-heading {
@@ -12,8 +13,6 @@
 .more-about-articles {
   display: flex;
   flex-wrap: nowrap;
-  padding-left: 22px;
-  padding-right: 22px;
 }
 
 .more-about-article {
@@ -56,6 +55,24 @@
 .scroller-mask {
   height: 220px;
   overflow: hidden;
+  position: relative;
+}
+
+.scroller-mask:before {
+  display: none;
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  opacity: 0.6;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eeeeee+100&0+0,1+100 */
+background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(238,238,238,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(238,238,238,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(238,238,238,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#eeeeee',GradientType=1 ); /* IE6-9 */
 }
 
 .scroller-horizontal {
