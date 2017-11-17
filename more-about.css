@@ -1,3 +1,7 @@
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 .more-about {
   background-color: #eee;
   overflow: hidden;
